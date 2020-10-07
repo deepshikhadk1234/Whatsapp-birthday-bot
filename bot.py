@@ -32,7 +32,7 @@ while True:
 
 ##chropt = webdriver.ChromeOptions()
 ##chropt.add_argument("")    
-driver = webdriver.Chrome(executable_path = r"C:\Users\DEEPSHIKHA\Downloads\chromedriver_win32")  
+driver = webdriver.Chrome(executable_path = r"C:\Users\DEEPSHIKHA\Downloads\chromedriver_win32\chromedriver")  
 driver.get("https://web.whatsapp.com/") 
 
 time.sleep(10)
