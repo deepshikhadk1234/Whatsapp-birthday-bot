@@ -41,15 +41,15 @@ print(namev)
 
 for inp in namev:
     try:
-        eleNM = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/div/div[2]'.format(inp))
+        eleNM = driver.find_element_by_xpath('//span[@title ="{}"]'.format(inp))
     except Exception as ex:
         print(ex)
         continue
     eleNM.click() 
 
     while(True):
-        eleTF = driver.find_element_by_class_name("_13mgZ")
+        eleTF = driver.find_element_by_class_name("_3FRCZ")
         eleTF.send_keys(wish_birth(inp))
-        eleSND = driver.find_element_by_class_name("_3M-N-") 
+        eleSND = driver.find_element_by_class_name("_1JNuk") 
         eleSND.click() 
         break
