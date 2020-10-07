@@ -23,7 +23,7 @@ print("Script Running")
 while True:
     try:
         datt = datetime.datetime.now()
-        namev = getJsonData(data_file, "name", "birth_month", "date_date", str(datt.month), str(datt.day))
+        namev = getJsonData(data_file, "name", "birth_month", "birth_date", str(datt.month), str(datt.day))
 
     except json.decoder.JSONDecodeError:
         continue
